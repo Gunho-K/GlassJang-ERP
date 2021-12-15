@@ -1,0 +1,35 @@
+.stock-table {
+	margin-top: 20px;
+	text-align: center;
+}
+ 
+.stock_table-blue {
+	background-color: #deebf7;
+}
+
+.table-date-view {
+	margin-top: 20px;
+	width: auto;
+	height: auto;
+}
+
+.stock_data_form {
+	display: inline-block;
+	width: 130px;
+}
+
+#table-date-view div {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+#table-date-view span {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#stock_management_data-submit-button {
+	text-align: right;
+	float: right;
+	margin-top: 20px
+}

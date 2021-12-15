@@ -1,0 +1,551 @@
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+@font-face {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf'); 
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: sans-serif;
+}
+
+/* ------------------------------------ */
+a {
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* ------------------------------------ */
+h1,h2,h3,h4,h5,h6 {margin: 0px;}
+
+p {margin: 0px;}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/* ------------------------------------ */
+input {
+  display: block;
+	outline: none;
+	border: none; <!-- !important �뜝�럡�뀭�뜝�럩�젷-->
+}
+
+textarea {
+  display: block;
+  outline: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+/* ------------------------------------ */
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utiliti ]*/
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 90%;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.wrap-table100 {
+  width: 1300px; <!--�뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥堉볩옙�눀占쎈튂占쎄뎡 �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援� �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援� �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援�(�뜝�럥�맶�뜝�럥�냲�뜝�룞�삕�뤆�룊�삕) : �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援� -->
+}
+
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  table-layout:fixed;
+  word-break:break-all;
+
+}
+table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #edf2fc; <!--�뜝�럥�맶�뜝�럥�냺嶺뚮ㅏ�뒩占쎄뎡 �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶占쎈쐻�뜝占� �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援� �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援�  : �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援� -->
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: center;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+.table100-head {
+	 height:50px;
+}
+
+.table100-head th{
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+  font-size: 16px;
+  color: #000000; 
+  line-height: 1.2;
+  font-weight: 1.5px;
+  padding: 10px;
+  border: 0.7px solid #E2E2E2;
+ 
+}
+
+.table100-head1 th{
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+  font-size: 14.5px;
+  color: #000000; 
+  line-height: 1.2;
+  font-weight: 1.5px;
+  padding: 10px;
+  border: 0.7px solid #E2E2E2;
+ 
+}
+
+.table10-head th{
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+  font-size: 15px;
+  color: #000000; 
+  line-height: 1.2;
+  font-weight: 1.3px;
+  padding: 10px;
+  border: 0.7px solid #E2E2E2;
+ 
+}
+/*泥댄겕諛뺤뒪*/
+.order_regist0,
+.item_regist0,
+.inventory_err0,
+.inventory_manage0,
+.sales_regist0{
+	width: 25px;
+}
+
+/* no */
+.customer_manage1,
+.account_manage1,
+.order_regist1,
+.order_state1,
+.order_account1,
+.order_item1,
+.order_emp1,
+.item_regist1,
+.inventory_err1,
+.inventory_manage1,
+.sales_regist1,
+.sales_aggreg1,
+.sales_account1,
+.sales_item1,
+.sales_emp1{
+	width: 45px;
+}
+
+ 
+/*�떞�떦�옄*/
+.order_regist2,
+.order_state2,
+.order_account4,
+.order_item4,
+.order_emp2,
+.sales_aggreg4,
+.sales_account6,
+.sales_emp2,
+.sales_item6{
+	width:180px;
+}
+
+/*嫄곕옒泥섎챸*/
+.order_regist4,
+.order_state4,
+.order_account3,
+.order_item6,
+.order_emp6,
+.sales_aggreg6,
+.sales_account3,
+.sales_emp6,
+.sales_item8{
+	width:130px;
+}
+
+/* �뭹紐⑹퐫�뱶 */
+.order_regist5,
+.order_state5,
+.order_account5,
+.order_item2,
+.order_emp3{
+	width:70px;
+	}
+
+/* �떒�쐞, �닔�웾, 鍮꾧퀬 */
+.customer_manage13,
+.account_manage6,
+.account_manage13,
+.order_regist7,
+.order_regist8,
+.order_regist13,
+.order_state7,
+.order_state8,
+.order_state13,
+.order_account7,
+.order_account8,
+.order_account13,
+.order_item7,
+.order_item8,
+.order_item13,
+.order_emp7,
+.order_emp8,
+.order_emp13,
+.inventory_err6,
+.inventory_err7,
+.inventory_err12,
+.inventory_manage9,
+.sales_aggreg9,
+.sales_aggreg10,
+.sales_aggreg16,
+.sales_account9,
+.sales_account10,
+.sales_account16,
+.sales_item9,
+.sales_item10,
+.sales_item16,
+.sales_emp9,
+.sales_emp10,
+.sales_emp16{
+	width:55px;
+}
+
+.sales_regist5{
+	width:62px;
+}
+
+
+/*嫄곕옒泥섏퐫�뱶, �떒媛�, �닔二쇨툑�븸, �닔二쇱씪, �닔二쇰쾲�샇, 洹� �쇅 留ㅼ텧*/
+.order_regist3,
+.order_regist9,
+.order_regist10,
+.order_regist11,
+.order_regist12,
+.order_regist14,
+.order_regist15,
+.order_state3,
+.order_state9,
+.order_state10,
+.order_state11,
+.order_state12,
+.order_account2,
+.order_account9,
+.order_account10,
+.order_account11,
+.order_account12,
+.order_item5,
+.order_item9,
+.order_item10,
+.order_item11,
+.order_item12,
+.order_emp5,
+.order_emp9,
+.order_emp10,
+.order_emp11,
+.order_emp12,
+.sales_aggreg3,
+.sales_aggreg5,
+.sales_account2,
+.sales_account5,
+.sales_emp4,
+.sales_emp5,
+.sales_item7,
+.sales_item5{
+	width:90px;
+}
+
+/*留ㅼ텧�럹�씠吏� 洹� �쇅 */
+.sales_regist4,
+.sales_aggreg2,
+.sales_aggreg7,
+.sales_aggreg11,
+.sales_aggreg12,
+.sales_aggreg13,
+.sales_aggreg14,
+.sales_account11,
+.sales_account12,
+.sales_account13,
+.sales_account14,
+.sales_account4,
+.sales_account7,
+.sales_emp11,
+.sales_emp12,
+.sales_emp13,
+.sales_emp14,
+.sales_emp7,
+.sales_emp3,
+.sales_item2,
+.sales_item4,
+.sales_item11,
+.sales_item12,
+.sales_item13,
+.sales_item14{
+	width:70px;
+}
+
+
+.sales_regist9,
+.sales_regist14{
+	width:62px;
+}
+
+/*�꽭湲덇퀎�궛�꽌踰덊샇*/
+.sales_regist15{
+	width:80px;
+}
+
+/*留ㅼ텧�벑濡� �떒�쐞,�닔�웾*/
+.sales_regist7,
+.sales_regist8,
+.sales_regist16{
+	width:50px;
+}
+
+[class^='tranding'] { 
+	border: 0.7px solid #b22222;
+	padding:5px;
+	height:30px;	
+	}
+.tranding{
+	font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+  	font-size: 14px;
+  	color: #b22222; 
+  	line-height: 1.2;
+  	font-weight:bold;
+  	padding: 10px;
+  	background-color: #ffebee;
+}	
+
+.tranding1{
+	color: #b22222; 
+}
+.top_tranding0{
+	border-left:0.7px solid #b22222;
+	
+}	
+.top_tranding0,
+.top_tranding1,
+.top_tranding2,
+.top_tranding3{
+	border-top:0.7px solid #b22222;
+	color: #b22222; 
+	background-color: #ffebee;
+}
+.top_tranding2{
+	  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+  font-size: 18px;
+  color: #b22222; 
+  line-height: 1.2;
+  font-weight: 1.5px;
+  padding: 10px;	
+}
+.top_tranding3{
+	border-right:0.7px solid #b22222;
+	text-align:left;
+}
+.tranding_bot23{
+	text-align:right;
+	margin:5px;
+}
+
+tbody tr {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+  font-size: 13px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+tbody td{
+	font-size:13px;
+}
+
+tbody td{
+	margin:10px;
+}
+
+@media screen {
+  #printSection {
+      display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility:hidden;
+  }
+  #printSection, #printSection * {
+    visibility:visible;
+  }
+  #printSection {
+    position:absolute;
+    left:0;
+    top:0;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Date";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Order ID";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Name";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Price";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Quantity";
+  }
+  table tbody tr td:nth-child(6):before {
+    content: "Total";
+  }
+
+<!-- 占쎈쨬占쎈즸占쎌굲 占쎈쐻占쎈윥�뜝�럥占쏙옙占쎌굲�뜝�럥�꼧�뜝�럥��占쎈쐻�뜝占� 占쎈쐻占쎈윞繹먯궍�쐻占쎈윪占쎄데占쎈쐻占쎈윥獒뺧옙 -->
+
+
+  tbody tr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+}
