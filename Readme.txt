@@ -1,13 +1,13 @@
 @ java Version
-- 버전 8 (jdk / jre 1.8.0_301)
+- Version 8 (jdk / jre 1.8.0_301)
 
 @ Tomcat Version
-- 버전 9 (9.0.53)
+- Version 9 (9.0.53)
 
 @ Tomcat Port 
 - 8888
 
-@ JSP 버전
+@ JSP Version
 - 2.3
 
 @Dynamic web module version
