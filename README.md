@@ -30,6 +30,9 @@
 ### DB
 ![DB 리스트](https://user-images.githubusercontent.com/59128962/147052874-907beaf6-77c1-485b-8da7-3e9ce4a0e4fa.png)
 
+# 시연 영상
+[![시연 영상](https://img.youtube.com/vi/AshzDnaTuMg/0.jpg)](https://youtu.be/AshzDnaTuMg)
+
 # 사용된 버전
 @ java Version
 - Version 8 (jdk / jre 1.8.0_301)
